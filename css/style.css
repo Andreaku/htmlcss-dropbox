@@ -1,0 +1,529 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    padding-top: 150px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+:root {
+    --jumbo-bg: #b4d0e7;
+    --asu-bg: #61082b;
+    --designit-bg: #a2d39b;
+    --ufflorida-bg: #0093ce;
+    --topps-bg: #ff1c1c;
+    --wbr-bg: #d5001f;
+    --loneyplanet-bg: #0d2481;
+    --clearchannel-bg: #ffd830;
+    --heartscorporation-bg: #b4d0e7;
+    --designit-slogan-bg: #f5f5f5;
+    --freetrial-bg: #b4d0e7;
+    --footer-bg: #000000;
+    --fixed-navbar-bg: #ffffff;
+    --uncolored-button-bg: #ffffff;
+    --plans-border: #d6d4d4;
+    --uncolored-button-border: #000000;
+    --freetrial-txt: #61082b;
+    --footer-txt: #ffffff;
+    --buy-now-txt: #d2cdf8;
+    --colored-button: #0061ff;
+    --colored-button-txt: #ffffff;
+    --uncolored-button-txt: #000000;
+    --check-color: #0061ff;
+    --normal-a-txt-color: #0f0cf1;
+    --colored-buttons-hover: #f7c74c
+}
+
+.colored-button {
+    background-color: var(--colored-button);
+    color: var(--colored-button-txt);
+    transition: 0.4s ease;
+}
+
+.uncolored-button {
+    background-color: var(--uncolored-button-bg);
+    color: var(--uncolored-button-txt);
+    border: 1px solid var(--uncolored-button-border);
+    text-align: center;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.small-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.small-button {
+    text-align: center;
+    padding: 8px 15px;
+}
+
+
+.large-button {
+    width: 250px;
+    text-align: center;
+    padding: 10px 25px;
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.width-25 {
+    width: 25%;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.margin-25 {
+    margin-bottom: 25px;
+}
+
+.width-33 {
+    width: calc(100%/3);
+}
+
+.icon-list li {
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colored-button:hover {
+    box-shadow: 0 0 10px yellowgreen;
+    transform: scale(1.1);
+}
+
+.fixed-nav {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fixed-navbar-bg);
+    z-index: 1;
+    box-shadow: 0 1px 3px #dedede;
+}
+
+.fixed-nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.fixed-nav a {
+    text-decoration: none;
+    margin-left: 30px;
+
+
+}
+
+header .left-nav {
+    display: flex;
+}
+
+.jumbotron {
+    background-color: var(--jumbo-bg);
+    padding-top: 150px;
+    padding-bottom: 30px;
+    height: 820px;
+}
+
+.header-content {
+    height: 100%;
+    display: flex;
+}
+
+.jumbotron h1 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.jumbotron li {
+    margin: 40px 0;
+}
+
+#inpage-link {
+    font-size: 60px;
+}
+
+.jumbotron figure {
+    width: 100%;
+}
+
+.jumbotron img {
+    width: 100%
+}
+
+main h2 {
+    font-size: 40px;
+    font-weight: bold
+}
+
+#business-plan h2 {
+    margin-bottom: 30px;
+}
+
+#business-plan h3 {
+    margin-bottom: 20px
+}
+
+#business-plan .billing {
+    margin-bottom: 50px;
+}
+
+#business-plan .billing span {
+    margin-right: 20px;
+}
+
+.business-plans-box .row {
+    margin: 0 -20px;
+}
+
+.plans-card {
+    border: 2px solid var(--plans-border);
+
+
+}
+
+.business-plans-box .col {
+    padding: 0 20px;
+
+}
+
+.plans-type {
+    border-bottom: 2px solid var(--plans-border);
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.plan-price {
+    font-weight: bolder;
+}
+
+.plans-content {
+    padding: 30px 20px;
+}
+
+.plans-content li {
+    margin-bottom: 15px;
+}
+
+.plans-content div {
+    margin-bottom: 40px;
+}
+
+.buy-now-link {
+    text-decoration: underline;
+    color: var(--normal-a-txt-color)
+}
+
+
+
+.plans-content hr {
+    width: 20%;
+}
+
+.fa-check {
+    color: var(--check-color);
+}
+
+.plans-card {
+    height: 100%;
+}
+
+.plans-content span,
+.large-card-content span {
+    display: block;
+}
+
+.large-column {
+    flex-grow: 1;
+}
+
+.large-card-content {
+    display: flex;
+}
+
+.large-card-info {
+    width: 70%;
+    padding: 30px;
+}
+
+.large-card-link {
+    padding: 30px;
+    width: 30%;
+}
+
+#partner-dropbox .col-img {
+    width: 60%
+}
+
+#partner-dropbox .col-txt {
+    width: 40%;
+    padding: 40px;
+}
+
+#partner-dropbox img {
+    width: 100%;
+    display: block;
+}
+
+#partner-dropbox .uncolored-button {
+    padding: 10px;
+    display: block;
+    width: 60%;
+}
+
+#dropbox-business .business-info-card {
+    width: 100%;
+}
+
+#dropbox-business figure {
+    width: 100%;
+}
+
+#dropbox-business img {
+    width: 100%;
+}
+
+#dropbox-business h2 {
+    margin-bottom: 50px;
+}
+
+#dropbox-business .row {
+    margin: 0 -20px;
+}
+
+#dropbox-business .col {
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+#dropbox-clients .disclaimer-box {
+    width: calc(100%/3*2);
+}
+
+#dropbox-clients h2 {
+    margin-bottom: 60px;
+}
+
+#dropbox-clients .disclaimer-box a {
+    color: var(--normal-a-txt-color);
+    text-decoration: underline;
+}
+
+#dropbox-clients .disclaimer-box {
+    margin-bottom: 100px
+}
+
+.debug .border {
+    border: 1px solid black;
+}
+
+#dropbox-clients .side-col {
+    height: calc(100vw/3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropbox-clients .logo-box {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+#dropbox-clients .side-col figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+}
+
+#dropbox-clients .side-col img {
+    width: 50%;
+    filter: invert(100%);
+}
+
+#dropbox-clients .designit-box {
+    background-color: var(--designit-bg);
+}
+
+#dropbox-clients .asu-box {
+    background-color: var(--asu-bg);
+}
+
+#dropbox-clients .UF-box {
+    background-color: var(--ufflorida-bg);
+}
+
+#dropbox-clients .topps-box {
+    background-color: var(--topps-bg);
+}
+
+#dropbox-clients .wbr-box {
+    background-color: var(--wbr-bg);
+}
+
+#dropbox-clients .hearst-box {
+    background-color: var(--heartscorporation-bg);
+}
+
+#dropbox-clients .lonelyplanet-box {
+    background-color: var(--loneyplanet-bg);
+}
+
+#dropbox-clients .clearchannel-box {
+    background-color: var(--clearchannel-bg);
+}
+
+#dropbox-clients .middle-col .middle-content {
+    padding: 30px;
+}
+
+#dropbox-clients .middle-col figure {
+    width: 50%;
+}
+
+#dropbox-clients .middle-col img {
+    width: 100%;
+}
+
+#dropbox-clients .middle-content hr {
+
+    width: 20%;
+}
+
+#dropbox-clients .middle-content q {
+    display: block;
+    margin-bottom: 50px;
+}
+
+#dropbox-clients .large-col {
+    height: calc((100vw/3)/2);
+    background-color: var(--freetrial-bg);
+}
+
+#dropbox-clients .free-trial-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 100px 0;
+    height: 100%;
+}
+
+#dropbox-clients .free-trial-box h2 {
+    color: var(--freetrial-txt);
+}
+
+#dropbox-clients .free-trial-txt {
+    width: 50%;
+}
+
+#dropbox-clients .free-trial-link {
+    width: 30%;
+}
+
+#dropbox-clients .free-trial-button {
+    border: none;
+}
+
+#faq h2 {
+    margin-bottom: 80px;
+}
+
+#faq .angle-down {
+    text-align: end;
+}
+
+#faq button {
+    border: none;
+    background-color: var(--uncolored-button-bg);
+    cursor: pointer;
+}
+
+
+
+#faq .faq-box {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 100px;
+    padding-right: 20px;
+    border-top: 1px solid var(--uncolored-button-border);
+}
+
+#faq .last-question {
+    border-bottom: 1px solid var(--uncolored-button-border);
+}
+
+#more-content {
+    background-color: var(--footer-bg);
+    color: var(--footer-txt);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#more-content a {
+    color: var(--footer-txt);
+}
+
+#more-content .col {
+    width: 15%;
+    margin-bottom: 100px;
+}
+
+#more-content li {
+    margin-bottom: 10px;
+}
+
+#more-content hr {
+    width: 5%;
+    margin-bottom: 40px;
+}
